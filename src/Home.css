@@ -1,0 +1,27 @@
+.home_image {
+    height: 500px;
+    width: 100%;
+}
+.home_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 90px;
+  grid-row-gap: 90px;
+  
+  background-color: blueviolet;
+  width: 1500px;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+.home_row2 {
+    justify-content: center;
+    justify-content: space-around;
+  
+}
+/* .home_row1 { grid-area: 1 / 1 / 2 / 3; }
+
+.home_row2 { grid-area: 1 / 5 / 2 / 7; }
+
+.home_row3 { grid-area: 3 / 4 / 4 / 7; }  */

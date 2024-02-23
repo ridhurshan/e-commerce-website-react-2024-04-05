@@ -16,6 +16,7 @@
 .header_logoImage{
     margin-right: 10px;
     font-size: 10px;
+    padding: 5px;
 }
 .header_logoTitle{
     text-decoration: none;
@@ -59,6 +60,7 @@
     font-weight: 800;
 }
 .nav_basketItem{
+    size: 5px;
     display: flex;
     align-items: center;
     color: #dad9d9;

@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import { MdShoppingBasket } from "react-icons/md";
 import { FaStoreAlt } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import {Link} from "react-router-dom";
+import { useStateValue } from './StateProvider';
 
 function Header() {
+  const [{basket},dispatch] = useStateValue();
+  
   return (
     <div className='header'>
        < Link to="/" style={{textDecoration:"none"}}>
@@ -19,10 +22,12 @@ function Header() {
        <FaSearch className='header_searchIcon' />
       </div>
       <div className="header_nav">
+      < Link to="/Login" style={{textDecoration:"none"}}>
         <div className="nav_item">
           <spam className="itemLineOne">Please</spam>
           <spam className="itemLineTwo">Sign in</spam>
         </div>
+      </Link>
         <div className="nav_item">
           <spam className="itemLineOne">Your</spam>
           <spam className="itemLineTwo">Shop</spam>
@@ -30,7 +35,7 @@ function Header() {
         < Link to="/checkout" style={{textDecoration:"none"}}>
           <div className="nav_itemBasket">
           <MdShoppingBasket />
-          <spam className="itemLineTwo nav_basketCount ">0</spam>
+          <spam className="itemLineTwo nav_basketCount ">{basket.length}</spam>
           </div>
         </Link>
       

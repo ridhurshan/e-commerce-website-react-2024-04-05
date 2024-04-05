@@ -1,0 +1,56 @@
+/* CheckoutProduct.css */
+
+.checkoutProduct {
+    display: flex; /* Arrange elements horizontally */
+    align-items: center; /* Vertically align content */
+    padding: 10px; /* Add some padding */
+    border-bottom: 1px solid #ddd; /* Optional border */
+    background-color: chartreuse;
+    height: 250px;
+    width: 450px;
+  }
+  
+  .checkout_image {
+    width: 100px; /* Adjust image width as needed */
+    height: 100px; /* Adjust image height as needed */
+    margin-right: 10px; /* Spacing between image and info */
+  }
+  
+  .checkoutProduct_info {
+    background-color: cornflowerblue;
+    height: 200 px;
+  }
+  
+  .checkoutProduct_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .checkoutProduct_price {
+    color: #333;
+    font-weight: 600; /* Slightly bold */
+  }
+  
+  .checkoutProduct_rating {
+    margin-left: auto; /* Align to right */
+    font-size: 18px;
+  }
+  
+  button {
+    /* Style your button here (e.g., background color, border, etc.) */
+    margin-left: auto; /* Align to right */
+  }
+  
+  /* Media queries for responsive design (optional) */
+  @media (max-width: 768px) {
+    .checkoutProduct {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      align-items: flex-start; /* Left-align content */
+    }
+  
+    .checkout_image {
+      margin-bottom: 10px; /* Add spacing on smaller screens */
+    }
+  }
+  
